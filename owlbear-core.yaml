@@ -137,7 +137,6 @@ commands:
 
   ### CHANGES FROM BLENDOS-BASE ###
   # Added and automatically changed to zsh
-  # Added Elvish
   # Added Fastfetch
   # Added Flatpak
   # Enable multilib and chaotic-aur
