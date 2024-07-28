@@ -1,22 +1,21 @@
 impl: 'https://github.com/s-20/owlbear-tracks/raw/main'
 
-track: 'blendos-base'
+track: 'owlbear-core'
 
 packages:
   - 'adw-gtk3'
   - 'baobab'
-  - 'blendos-wallpapers-git'
+  - 'epiphany'
   - 'evince'
+  - 'extension-manager'
   - 'gdm'
-  - 'gnome-backgrounds'
+  - 'geary'
   - 'gnome-calculator'
   - 'gnome-calendar'
   - 'gnome-characters'
   - 'gnome-clocks'
   - 'gnome-color-manager'
-  - 'gnome-connections'
   - 'gnome-console'
-  - 'gnome-contacts'
   - 'gnome-control-center'
   - 'gnome-disk-utility'
   - 'gnome-font-viewer'
@@ -24,7 +23,6 @@ packages:
   - 'gnome-logs'
   - 'gnome-maps'
   - 'gnome-menus'
-  - 'gnome-music'
   - 'gnome-remote-desktop'
   - 'gnome-session'
   - 'gnome-settings-daemon'
@@ -33,6 +31,7 @@ packages:
   - 'gnome-software'
   - 'gnome-system-monitor'
   - 'gnome-text-editor'
+  - 'gnome-tweaks'
   - 'gnome-user-docs'
   - 'gnome-user-share'
   - 'gnome-weather'
@@ -46,27 +45,38 @@ packages:
   - 'gvfs-nfs'
   - 'gvfs-smb'
   - 'loupe'
-  - 'malcontent'
   - 'nautilus'
   - 'orca'
-  - 'rygel'
-  - 'simple-scan'
   - 'snapshot'
   - 'sushi'
   - 'tecla'
-  - 'totem'
   - 'tracker3-miners'
   - 'xdg-desktop-portal-gnome'
   - 'xdg-user-dirs-gtk'
-  - 'yelp'
-  - 'gnome-shell-extension-blur-my-shell'
-  - 'gnome-shell-extension-appindicator'
-  - 'gnome-software'
   - 'waydroid'
   - 'waydroid-image'
+
 
 services:
   - 'gdm'
 
 commands:
+  - 'find /usr/share/metainfo ! -name "org.freedesktop.appstream.cli.metainfo.xml" ! -name "org.freedesktop.appstream.compose.metainfo.xml" ! -name "org.gnome.Software.Plugin.Flatpak.metainfo.xml" ! -name "org.gnome.Software.Plugin.Fwupd.metainfo.xml"  -type f -exec rm -f {} +'
   - 'rm -f /usr/share/applications/Waydroid.desktop'
+  - 'rm -f /usr/share/applications/stoken-gui.desktop'
+  - 'rm -f /usr/share/applications/stoken-gui-small.desktop'
+  - 'rm -f /usr/share/applications/qvidcap.desktop'
+  - 'rm -f /usr/share/applications/qv4l2.desktop'
+  - 'rm -f /usr/share/applications/bvnc.desktop'
+  - 'rm -f /usr/share/applications/electron*.desktop'
+  - 'rm -f /usr/share/applications/avahi-discover.desktop'
+  - 'rm -f /usr/share/applications/bssh.desktop'
+
+### CHANGES FROM GNOME TRACK ###
+## Removed several things I don't use:
+# Connections, Contacts, all Wallpapers, 
+# Music, rygel, simple-scan
+# all gnome extensions, totem, malcontent
+## Added some stuff
+# geary, gnome-tweaks, 
+# extension-manager, epiphany

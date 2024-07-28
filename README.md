@@ -18,9 +18,9 @@ And that's it for now. I might add an XFCE one or a more customized one if I get
 These are the ones I'm building for myself, because blendOS's system.yaml thing is kinda fun, and I want  to learn more. 
 
 * **Owlbear Core**: `owlbear-core`
-	* The baseline that the other stuff is built off of, a modified version of blendos-base, but with a different shell (I dunno, `fish` or `elvish` or something) and a few other changes. Adds in the [Chaotic-aur](https://aur.chaotic.cx/) repo from [Garuda Linux](https://garudalinux.org/). This is because compiling stuff every time you do an update is annoying as hell, and I don't know how people put up with it.
+	* The baseline that the other stuff is built off of, a modified version of blendos-base, but with zsh as the default shell. I also stripped out AMD support since this is for my laptop, which is an intel. I'll add in an AMD-Owlbear version eventually.
 * **Gnomeish Owlbear**: `gnomish-owlbear`
-    + My very vanilla Gnome setup. This leaves out some stuff and adds in some other stuff (I have no use for scanner software, for instance, but I want a particular Extension manager and Web Browser). No pre-installed Extensions!
+    + My very vanilla Gnome setup. This leaves out some stuff and adds in some other stuff, but is a pure gnome build with only Gnome and Gnome Circle apps included and no pre-installed Extensions!
 
 ## To Do
 
@@ -30,7 +30,7 @@ These are the ones I'm building for myself, because blendOS's system.yaml thing 
 
 [x] Delete KDE, Cinnamon, LXQT, Mate
 
-[] Modify owlbear-core and test
+[X] Modify owlbear-core and test
 
 [] modify gnomish-owlbear and test
 
@@ -40,6 +40,4 @@ These are the ones I'm building for myself, because blendOS's system.yaml thing 
 
 [] other fun stuff
 
-[] ...
-
-[] profit!
+[] Backup my current system.yaml
