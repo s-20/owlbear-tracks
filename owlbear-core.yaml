@@ -1,10 +1,7 @@
-impl: https://github.com/s-20/owlbear-tracks/raw/main
-
 track: 'custom'
 
 packages:
   - 'alsa-utils'
-  - 'amd-ucode'
   - 'arch-install-scripts'
   - 'b43-fwcutter'
   - 'archlinux-keyring'
@@ -13,9 +10,11 @@ packages:
   - 'bash'
   - 'bzip2'
   - 'coreutils'
+  - 'fastfetch'
   - 'file'
   - 'filesystem-blend'
   - 'findutils'
+  - 'flatpak'
   - 'gawk'
   - 'gcc-libs'
   - 'gettext'
@@ -117,13 +116,30 @@ packages:
   - 'xl2tpd'
   - 'bluez'
   - 'networkmanager'
-  - 'cups'
   - 'ttf-jetbrains-mono'
+  - 'zsh'
 
 services:
-  - 'cups'
   - 'bluetooth'
   - 'NetworkManager'
 
 user-services:
   - 'blend-files'
+
+package-repos:
+  - name: 'multilib'
+    repo-url: 'https://mirrors.mit.edu/archlinux/$repo/os/$arch'
+  - name: 'chaotic-aur'
+    repo-url: 'https://cdn-mirror.chaotic.cx/$repo/$arch'
+
+commands:
+  - 'chsh -s /bin/zsh'
+
+  ### CHANGES FROM BLENDOS-BASE ###
+  # Added and automatically changed to zsh
+  # Added Elvish
+  # Added Fastfetch
+  # Added Flatpak
+  # Enable multilib and chaotic-aur
+  # Removed cups and cups service
+  # Removed amd-ucode because this track is intel-cpu-only

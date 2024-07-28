@@ -36,6 +36,8 @@ These are the ones I'm building for myself, because blendOS's system.yaml thing 
 
 [] remove blendos-base and gnome
 
+[] create versions of owlbear-core for AMD procs (currently intel-only)
+
 [] other fun stuff
 
 [] ...
