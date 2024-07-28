@@ -1,39 +1,17 @@
-# blendOS Tracks
+# Owlbear's Tracks for blendOS
 
-* GNOME: `gnome`
-* Plasma: `plasma`
-* Cinnamon: `cinnamon`
-* LXQT: `lxqt`
-* MATE: `mate`
-* XFCE: `xfce`
+These are my personal Tracks for blendOS. This includes the basic tracks from the original blendOS repo that I'm keeping for reference, minus the ones I just ain't gonna use. The originals here are:
 
-## Example GNOME `/system.yaml` (vanilla)
+* **blendOS Base**: blendos-base
+* * The base track others are based on. I'm going to use this as a basis for Owlbear-Core
+* **Gnome**: `gnome`
+* * The base Gnome track, which I will be streamlining to make Gnomeish-Owlbear
 
-```
-repo: 'https://pkg-repo.blendos.co/'
+And that's it for now. I might add an XFCE one or a more customized one if I get ambitious.
 
-impl: 'https://github.com/blend-os/tracks/raw/main'
+## Owlbear's Custom Tracks
 
-track: 'gnome'
-```
+These are the ones I'm building for myself, because blendOS's system.yaml thing is kinda fun, and I want  to learn more. 
 
-## Example GNOME `/system.yaml` with Caddy
-
-```
-repo: 'https://pkg-repo.blendos.co/'
-
-impl: 'https://github.com/blend-os/tracks/raw/main'
-
-track: 'gnome'
-
-packages:
-    - 'micro'
-    - 'caddy'
-
-services:
-    - 'caddy'
-
-package-repos:
-    - name: 'chaotic-aur'
-      repo-url: 'https://cdn-mirror.chaotic.cx/$repo/$arch'
-```
+* **Owlbear Core**: 'owlbear-core'
+* *The baseline that the other stuff is built off of, a modified version of blendos-base, but with the fish shell and a few other changes.
