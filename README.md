@@ -24,17 +24,17 @@ These are the ones I'm building for myself, because blendOS's system.yaml thing 
 
 ## To Do
 
-[x] Update Readme
+[X] Update Readme
 
-[x] Copy blendos-base.yaml and gnome.yaml, rename to owlbear-core and gnomish-owlbear, and change iml in each
+[X] Copy blendos-base.yaml and gnome.yaml, rename to owlbear-core and gnomish-owlbear, and change iml in each
 
-[x] Delete KDE, Cinnamon, LXQT, Mate
+[X] Delete KDE, Cinnamon, LXQT, Mate
 
 [X] Modify owlbear-core and test
 
-[] modify gnomish-owlbear and test
+[X] modify gnomish-owlbear and test
 
-[] remove blendos-base and gnome
+[X] remove blendos-base and gnome
 
 [] create versions of owlbear-core for AMD procs (currently intel-only)
 
