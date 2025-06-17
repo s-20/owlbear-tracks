@@ -3,7 +3,7 @@ impl: 'https://github.com/s-20/owlbear-tracks/raw/main'
 track: 'owlbear-core'
 
 packages:
-  - 'adw-gtk3'
+  - 'adw-gtk-theme'
   - 'baobab'
   - 'epiphany'
   - 'evince'
