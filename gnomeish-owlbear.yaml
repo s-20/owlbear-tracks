@@ -58,14 +58,14 @@ packages:
   - 'sushi'
   - 'tecla'
   - 'tracker3-miners'
-  - 'totem'
+ # - 'totem'
   - 'xdg-desktop-portal-gnome'
   - 'xdg-user-dirs-gtk'
   - 'waydroid'
   - 'waydroid-image'
 
-aur-packages: 
-  - 'codecs64'
+# aur-packages: 
+#  - 'codecs64'
 
 services:
   - 'gdm'
