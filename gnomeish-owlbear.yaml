@@ -47,6 +47,7 @@ packages:
   - 'gvfs-nfs'
   - 'gvfs-smb'
   - 'heroic-games-launcher-bin'
+  - 'icecat-bin'
   - 'loupe'
   - 'lutris'
   - 'nautilus'
