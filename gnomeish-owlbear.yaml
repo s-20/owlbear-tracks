@@ -7,7 +7,6 @@ packages:
   - 'baobab'
   - 'brave-bin'
   - 'epiphany'
-  - 'evince'
   - 'extension-manager'
   - 'firefox'
   - 'gdm'
@@ -29,7 +28,7 @@ packages:
   - 'gnome-session'
   - 'gnome-settings-daemon'
   - 'gnome-shell'
-  - 'gnome-shell-extensions'
+  # - 'gnome-shell-extensions'
   - 'gnome-software'
   - 'gnome-system-monitor'
   - 'gnome-text-editor'
@@ -52,16 +51,20 @@ packages:
   - 'lutris'
   - 'nautilus'
   - 'orca'
+  - 'papers'
   - 'snapshot'
   - 'steam'
   - 'sushi'
   - 'tecla'
   - 'tracker3-miners'
+  - 'totem'
   - 'xdg-desktop-portal-gnome'
   - 'xdg-user-dirs-gtk'
   - 'waydroid'
   - 'waydroid-image'
 
+aur-packages: 
+  - 'codecs64'
 
 services:
   - 'gdm'
