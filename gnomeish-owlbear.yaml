@@ -49,7 +49,7 @@ packages:
   - 'heroic-games-launcher-bin'
   - 'icecat-bin'
   - 'loupe'
-  - 'lutris'
+# - 'lutris'
   - 'nautilus'
   - 'orca'
   - 'papers'
