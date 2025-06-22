@@ -118,6 +118,7 @@ packages:
   - 'networkmanager'
   - 'ttf-jetbrains-mono'
   - 'zsh'
+  - 'power-profiles-daemon'
 
 services:
   - 'bluetooth'
