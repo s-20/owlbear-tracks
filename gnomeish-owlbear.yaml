@@ -8,7 +8,6 @@ packages:
   - 'brave-bin'
   - 'epiphany'
   - 'extension-manager'
-  - 'fastfetch'
   - 'firefox'
   - 'gdm'
   - 'geary'
@@ -29,7 +28,6 @@ packages:
   - 'gnome-session'
   - 'gnome-settings-daemon'
   - 'gnome-shell'
-  # - 'gnome-shell-extensions'
   - 'gnome-software'
   - 'gnome-system-monitor'
   - 'gnome-text-editor'
@@ -47,9 +45,9 @@ packages:
   - 'gvfs-nfs'
   - 'gvfs-smb'
   - 'heroic-games-launcher-bin'
-  - 'icecat-bin'
+  - 'hyfetch'
+  - 'localsearch'
   - 'loupe'
-# - 'lutris'
   - 'nautilus'
   - 'orca'
   - 'papers'
@@ -57,15 +55,12 @@ packages:
   - 'steam'
   - 'sushi'
   - 'tecla'
-  - 'tracker3-miners'
- # - 'totem'
   - 'xdg-desktop-portal-gnome'
   - 'xdg-user-dirs-gtk'
   - 'waydroid'
   - 'waydroid-image'
 
 # aur-packages: 
-#  - 'codecs64'
 
 services:
   - 'gdm'
@@ -94,4 +89,5 @@ commands:
 # all gnome extensions, totem, malcontent
 ## Added some stuff
 # geary, gnome-tweaks, 
-# extension-manager, epiphany
+# extension-manager, brave
+# hyfetch, other stuff
