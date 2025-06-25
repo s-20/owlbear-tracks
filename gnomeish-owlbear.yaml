@@ -73,8 +73,8 @@ services:
 package-repos:
   - name: 'multilib'
     repo-url: 'https://mirrors.mit.edu/archlinux/$repo/os/$arch'
-  # - name: 'chaotic-aur'
-  #  repo-url: 'https://cdn-mirror.chaotic.cx/$repo/$arch'
+  - name: 'chaotic-aur'
+    repo-url: 'https://cdn-mirror.chaotic.cx/$repo/$arch'
   - name: 'gnome-testing'
     repo-url: 'https://mirrors.mit.edu/archlinux/gnome-unstable/$repo/os/$arch'
 
