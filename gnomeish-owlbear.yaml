@@ -8,12 +8,11 @@ packages:
   - 'baobab'
   - 'brave-bin'
   - 'cartridges'
- # - 'epiphany'
   - 'extension-manager'
- # - 'firefox'
   - 'fragments
   - 'gdm'
   - 'geary'
+  - 'gnome-browser-connector'
   - 'gnome-calculator'
   - 'gnome-calendar'
   - 'gnome-characters'
@@ -54,6 +53,7 @@ packages:
   - 'localsearch'
   - 'loupe'
   - 'nautilus'
+  - 'obsidian'
   - 'orca'
   - 'papers'
   - 'snapshot'
@@ -79,7 +79,7 @@ package-repos:
     repo-url: 'https://mirrors.mit.edu/archlinux/gnome-unstable/$repo/os/$arch'
 
 commands:
-  - 'rm -f /usr/share/applications/Waydroid.desktop'
+ # - 'rm -f /usr/share/applications/Waydroid.desktop'
   - 'rm -f /usr/share/applications/stoken-gui.desktop'
   - 'rm -f /usr/share/applications/stoken-gui-small.desktop'
   - 'rm -f /usr/share/applications/qvidcap.desktop'
