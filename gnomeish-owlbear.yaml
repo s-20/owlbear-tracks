@@ -88,9 +88,9 @@ commands:
   - 'rm -f /usr/share/applications/electron*.desktop'
   - 'rm -f /usr/share/applications/avahi-discover.desktop'
   - 'rm -f /usr/share/applications/bssh.desktop'
-  - 'sudo flatpak override --filesystem=xdg-data/themes'
-  - 'sudo flatpak mask org.gtk.Gtk3theme.adw-gtk3'
-  - 'sudo flatpak mask org.gtk.Gtk3theme.adw-gtk3-dark'
+  - 'flatpak override --filesystem=xdg-data/themes'
+  - 'flatpak mask org.gtk.Gtk3theme.adw-gtk3'
+  - 'flatpak mask org.gtk.Gtk3theme.adw-gtk3-dark'
   - 'gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark''
   - 'gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled-on-external-mouse'
 
