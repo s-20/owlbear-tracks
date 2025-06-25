@@ -75,8 +75,8 @@ package-repos:
     repo-url: 'https://mirrors.mit.edu/archlinux/$repo/os/$arch'
   - name: 'chaotic-aur'
     repo-url: 'https://cdn-mirror.chaotic.cx/$repo/$arch'
-  - name: 'gnome-testing'
-    repo-url: 'https://mirrors.mit.edu/archlinux/gnome-unstable/$repo/os/$arch'
+ # - name: 'gnome-testing'
+ #   repo-url: 'https://mirrors.mit.edu/archlinux/gnome-unstable/$repo/os/$arch'
 
 commands:
  # - 'rm -f /usr/share/applications/Waydroid.desktop'
@@ -88,9 +88,9 @@ commands:
   - 'rm -f /usr/share/applications/electron*.desktop'
   - 'rm -f /usr/share/applications/avahi-discover.desktop'
   - 'rm -f /usr/share/applications/bssh.desktop'
- # - 'flatpak override --filesystem=xdg-data/themes'
- # - 'flatpak mask org.gtk.Gtk3theme.adw-gtk3'
- # - 'flatpak mask org.gtk.Gtk3theme.adw-gtk3-dark'
+  - 'sudo flatpak override --filesystem=xdg-data/themes'
+  - 'sudo flatpak mask org.gtk.Gtk3theme.adw-gtk3'
+  - 'sudo flatpak mask org.gtk.Gtk3theme.adw-gtk3-dark'
   - 'gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark''
   - 'gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled-on-external-mouse'
 
