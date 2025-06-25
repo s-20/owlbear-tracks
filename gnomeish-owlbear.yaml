@@ -4,16 +4,20 @@ track: 'owlbear-core'
 
 packages:
   - 'adw-gtk-theme'
+  - 'apostrophe'
   - 'baobab'
   - 'brave-bin'
-  - 'epiphany'
+  - 'cartridges'
+ # - 'epiphany'
   - 'extension-manager'
-  - 'firefox'
+ # - 'firefox'
+  - 'fragments
   - 'gdm'
   - 'geary'
   - 'gnome-calculator'
   - 'gnome-calendar'
   - 'gnome-characters'
+  - 'gnome-contacts'
   - 'gnome-clocks'
   - 'gnome-color-manager'
   - 'gnome-console'
@@ -46,6 +50,7 @@ packages:
   - 'gvfs-smb'
   - 'heroic-games-launcher-bin'
   - 'hyfetch'
+  - 'iotas'
   - 'localsearch'
   - 'loupe'
   - 'nautilus'
@@ -57,8 +62,8 @@ packages:
   - 'tecla'
   - 'xdg-desktop-portal-gnome'
   - 'xdg-user-dirs-gtk'
-  - 'waydroid'
-  - 'waydroid-image'
+ # - 'waydroid'
+ # - 'waydroid-image'
 
 # aur-packages: 
 
@@ -68,8 +73,10 @@ services:
 package-repos:
   - name: 'multilib'
     repo-url: 'https://mirrors.mit.edu/archlinux/$repo/os/$arch'
-  - name: 'chaotic-aur'
-    repo-url: 'https://cdn-mirror.chaotic.cx/$repo/$arch'
+  # - name: 'chaotic-aur'
+  #  repo-url: 'https://cdn-mirror.chaotic.cx/$repo/$arch'
+  - name: 'gnome-testing'
+    repo-url: 'https://mirrors.mit.edu/archlinux/gnome-unstable/$repo/os/$arch'
 
 commands:
   - 'rm -f /usr/share/applications/Waydroid.desktop'
@@ -81,6 +88,11 @@ commands:
   - 'rm -f /usr/share/applications/electron*.desktop'
   - 'rm -f /usr/share/applications/avahi-discover.desktop'
   - 'rm -f /usr/share/applications/bssh.desktop'
+  - 'sudo flatpak override --filesystem=xdg-data/themes'
+  - 'sudo flatpak mask org.gtk.Gtk3theme.adw-gtk3'
+  - 'sudo flatpak mask org.gtk.Gtk3theme.adw-gtk3-dark'
+  - 'gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark''
+  - 'gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled-on-external-mouse'
 
 ### CHANGES FROM GNOME TRACK ###
 ## Removed several things I don't use:
@@ -91,3 +103,11 @@ commands:
 # geary, gnome-tweaks, 
 # extension-manager, brave
 # hyfetch, other stuff
+# 25JUN
+# commented out Epiphany and Firefox; use flatpaked browsers instead
+# Commented the Waydroid packages I doubt I'll use
+# added Gnome-Unstable repro, since I can't get the damn GnomeOS to work yet
+# added ins some Gnome Core and Gnome Circle apps
+# set GTK2/3 theme to Adwaita Dark with the adw-gtk3-dark package
+# disable touchpad when external mouse is plugged in; wish there was a way to do the same thing with a keyboard...
+# Disable the Chaotic AUR that I don't seem to be using; remember to update the README.
